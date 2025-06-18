@@ -88,33 +88,6 @@ See `Source_submit/libs/multi_vit_classifier.py` for implementation details.
 
 ---
 
-## Training
-
-To train the custom ViT model:
-
-1. **Prepare your dataset** in the structure described above.
-
-2. **Run the training script:**
-   ```bash
-   python libs/train_model_vit.py
-   ```
-   *(Or use your own training script that imports and uses the `ViT_MushroomClassifier` from `multi_vit_classifier.py` and the `MultiImageMushroomDataset` from `multi_image_dataset.py`.)*
-
-3. **Training parameters** (can be adjusted in the script):
-   - Number of epochs
-   - Batch size
-   - Learning rate
-   - Early stopping threshold
-
----
-
-## Evaluation
-
-- The script provides evaluation metrics (classification report) after training.
-- You can use the `evaluate` function in `train_model_vit.py` to assess model performance on a validation set.
-
----
-
 ## Inference
 
 To classify new images:
